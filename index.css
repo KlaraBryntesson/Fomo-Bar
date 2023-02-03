@@ -1,0 +1,715 @@
+@font-face {
+  font-family: Myfont1;
+  font-weight: 400;
+  src: url(assets/Rajdhani/Rajdhani-Medium.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: Myfont2;
+  src: url(assets/Petit_Formal_Script/PetitFormalScript-Regular.ttf)
+    format(truetype);
+}
+
+body {
+  font-family: Myfont1, sans-serif;
+  margin: 0;
+  background-image: url(assets/background-liten.jpg);
+  background-color: rgb(62, 57, 51);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ----HEADER---- */
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.head {
+  display: flex;
+  background-color: rgba(216, 194, 167, 0.5);
+  margin: 0;
+  padding: 1em;
+}
+
+.brand {
+  font-family: Myfont2, sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  flex-grow: 1;
+  align-self: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.toplinks:after {
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  transform-origin: center;
+  transform: scaleX(0);
+  bottom: 0%;
+  left: 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.toplinks:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.toplinks {
+  display: inline-block;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding-bottom: 3px;
+}
+
+.toplinks:hover::after:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ----HOME---- */
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#book {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+.link {
+  display: flex;
+  background-color: rgb(186, 150, 106);
+  color: black;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  width: 4rem;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+#big-logo {
+  text-align: center;
+  font-family: Myfont2, sans-serif;
+  color: rgb(236, 231, 221);
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px black;
+}
+
+#big-logo-text {
+  text-align: center;
+  color: rgb(236, 231, 221);
+  font-size: 1.5rem;
+  margin-bottom: 100px;
+}
+
+#about-box {
+  background-color: rgba(10, 9, 8, 0.5);
+  color: antiquewhite;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+}
+
+#about {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 30px;
+  width: 250px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(236, 231, 221);
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* -----MENU----- */
+
+.grid {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(10, 9, 8, 0.5);
+  color: antiquewhite;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 100%;
+}
+
+.menu {
+  padding-left: 0.5rem;
+}
+
+dt,
+dd {
+  margin-bottom: 8px;
+}
+
+#menu-beer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 1px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.menu-top-beer {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#menu-wine {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 1px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.menu-top-wine {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#menu-drink {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 1px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.menu-top-drink {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.menu-last-drink {
+  grid-column: 1/3;
+  grid-row: 10/11;
+  text-align: center;
+}
+
+/* ----CONTACT---- */
+
+.contact-grid {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(10, 9, 8, 0.5);
+  color: antiquewhite;
+  padding: 0.5rem;
+  width: 80%;
+  margin: auto;
+}
+
+.contact-adress {
+  padding: 20px;
+}
+
+#contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#map-stor {
+  align-self: center;
+  height: 70%;
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+/* ----BOOK---- */
+
+fieldset {
+  border-style: none;
+  padding-left: 0;
+}
+
+legend {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.book-grid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.book-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(10, 9, 8, 0.5);
+  color: antiquewhite;
+  padding: 0.3rem;
+  width: 80%;
+}
+
+#book-drink {
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+  padding: 10px;
+}
+
+#book-top {
+  margin-left: 0;
+}
+
+form {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  margin-bottom: 0.8rem;
+  background-color: rgb(216, 194, 167);
+  color: black;
+  width: 90%;
+  margin-right: 80%;
+}
+
+select {
+  background-color: rgb(216, 194, 167);
+  margin-right: 80%;
+}
+
+#submit {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-style: none;
+  width: 4rem;
+  height: 1.5rem;
+  font-family: Myfont1, sans-serif;
+  font-size: 0.8rem;
+}
+
+/* ----SUBMIT---- */
+
+#submit-page {
+  background-color: rgba(10, 9, 8, 0.7);
+  color: antiquewhite;
+  padding: 0.5rem;
+  width: 60%;
+  margin-top: 200px;
+  margin-left: 100px;
+  font-size: 2rem;
+}
+
+.thank-you {
+  padding: 1rem;
+  line-height: 2rem;
+}
+/* ----FOOTER---- */
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(216, 194, 167, 0.5);
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.adress-list {
+  margin-left: 0;
+  padding-left: 15px;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+  list-style-type: none;
+}
+
+.see {
+  align-self: flex-end;
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+
+.social {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 0.2rem;
+}
+
+@media (max-width: 799px) {
+  #beer {
+    display: none;
+  }
+
+  #wine {
+    display: none;
+  }
+
+  #drink {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(assets/background-stor.jpg);
+    background-color: rgb(62, 57, 51);
+  }
+
+  /* ----MENU---- */
+
+  .grid {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
+
+  .box {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    flex-grow: 1;
+  }
+
+  dt,
+  dd {
+    margin-bottom: 0;
+  }
+
+  .menu {
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #menu-beer {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    gap: 1px;
+  }
+
+  #beer {
+    height: 300px;
+    width: 50%;
+    padding: 20px;
+    margin-right: 0;
+  }
+
+  .menu-top-beer {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 20px;
+  }
+
+  #menu-wine {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    gap: 1px;
+  }
+
+  #wine {
+    height: 320px;
+    width: 50%;
+    padding: 20px;
+    margin-right: 0;
+  }
+
+  .menu-top-wine {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 3px;
+    margin-top: 20px;
+  }
+
+  #menu-drink {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    gap: 1px;
+  }
+
+  #drink {
+    height: 320px;
+    width: 50%;
+    padding: 20px;
+    margin-right: 0;
+  }
+
+  .menu-top-drink {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 3px;
+    margin-top: 20px;
+  }
+
+  /* ----BOOK---- */
+
+  #book-top {
+    font-size: 1.5rem;
+  }
+
+  form {
+    margin-left: 25px;
+  }
+
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    width: 100px;
+  }
+
+  #submit {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  input {
+    margin-bottom: 20px;
+  }
+
+  #book {
+    margin: 3rem;
+  }
+
+  /* ----HOME---- */
+
+  .toplinks {
+    font-size: 1.1rem;
+  }
+
+  .link {
+    font-size: 1.2rem;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  #big-logo {
+    margin-top: 0;
+    font-size: 4rem;
+    text-shadow: 2px 2px black;
+  }
+
+  #big-logo-text {
+    font-size: 1.6rem;
+    margin-bottom: 300px;
+  }
+
+  #about-box {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+  }
+
+  #about {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 30px;
+    width: 380px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .brand {
+    font-size: 1.5rem;
+  }
+
+  .top {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .toplinks {
+    font-size: 1.2rem;
+    margin-right: 3rem;
+  }
+
+  .link {
+    font-size: 1.2rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #big-logo {
+    margin-top: 0;
+    font-size: 5rem;
+    text-shadow: 2px 2px black;
+  }
+
+  #big-logo-text {
+    font-size: 1.8rem;
+    margin-bottom: 300px;
+  }
+
+  /* ----BOOK---- */
+
+  .book-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  #book-drink {
+    align-self: center;
+    margin: 20px;
+    padding-right: 15px;
+    width: 45%;
+  }
+
+  /* ----FOOTER---- */
+
+  .adress-list {
+    font-size: 1.1rem;
+    line-height: 20px;
+    margin-left: 0;
+    list-style-type: none;
+  }
+
+  .see {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  .social {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 15px;
+  }
+
+  /* ----CONTACT---- */
+
+  .contact-grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-adress {
+    padding: 30px;
+  }
+
+  #contact-list {
+    padding: 0 1.5rem 0 0;
+    line-height: 30px;
+    font-size: 1.2rem;
+  }
+
+  #map-stor {
+    width: 47%;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 800px) {
+  #about {
+    font-size: 1.5rem;
+    line-height: 40px;
+    width: 550px;
+    margin-top: 70px;
+  }
+
+  .grid {
+    width: 90%;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    width: 80%;
+    padding-bottom: 0;
+  }
+}

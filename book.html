@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" />
+    <title>Fomo Bar - Book</title>
+    <meta
+      name="description"
+      content="Book a table at Fomo Bar using this form and we also accept booking by telephone."
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="head">
+        <p class="brand">Fomo Bar</p>
+        <ul class="top">
+          <li><a class="toplinks" href="index.html">Home</a></li>
+          <li><a class="toplinks" href="menu.html">Menu</a></li>
+          <li><a class="toplinks" href="contact.html">Book</a></li>
+          <li><a class="toplinks" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Book</h1>
+      <section class="book-grid">
+        <div class="book-box">
+          <form action="submit.html">
+            <fieldset>
+              <legend id="book-top">Book a table</legend>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+              <label for="phone">Phone number</label>
+              <input type="text" id="phone" name="phone" />
+              <label for="date">Date</label>
+              <input type="date" name="date" id="date" />
+              <label for="time">Time</label>
+              <select name="time" id="time">
+                <option value="17-19">17:00-19:00</option>
+                <option value="19-21">19:00-21:00</option>
+                <option value="21-23">21:00-23:00</option>
+              </select>
+              <input id="submit" type="submit" value="Book" />
+            </fieldset>
+          </form>
+          <img id="book-drink" src="assets/drink3.jpg" alt="drink" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="adress-list">
+        <li>Haga Nygata 18</li>
+        <li>Göteborg</li>
+        <li>031-576060</li>
+      </ul>
+      <div class="see">
+        See more at:
+        <a href=""
+          ><img class="social" src="assets/facebook.png" alt="Facebook" /></a
+        ><a href=""
+          ><img
+            class="social"
+            src="assets/pngwing.com-4.png.webp"
+            alt="Instagram"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
